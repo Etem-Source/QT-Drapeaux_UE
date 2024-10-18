@@ -39,6 +39,9 @@ class MainWindow : public QMainWindow
         QPushButton *B12 = new QPushButton("LUXEMBOURG");
         QPushButton *B13 = new QPushButton("PAYS-BAS");
         QPushButton *B14 = new QPushButton("ROUMANIE");
+    protected:
+        void resizeEvent(QResizeEvent *event) override; // Déclaration de la méthode resizeEvent
+        void setBackgroundImage(); // Déclaration de la méthode setBackgroundImage
 
     public slots:
         void Drapeau_ALLEMAGNE();
