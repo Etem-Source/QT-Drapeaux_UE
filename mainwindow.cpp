@@ -77,7 +77,7 @@ void MainWindow::Drapeau_AUTRICHE() // B2
 
 void MainWindow::Drapeau_BELGIQUE() // B3
 {
-    Drapeau *D = new Drapeau("Red", "White", "Red", "Horizontal", "Belgique");
+    Drapeau *D = new Drapeau("Black", "Gold", "Red", "Horizontal", "Belgique");
 }
 
 void MainWindow::Drapeau_BULGARIE() // B4
