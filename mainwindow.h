@@ -39,6 +39,15 @@ class MainWindow : public QMainWindow
         QPushButton *B12 = new QPushButton("LUXEMBOURG");
         QPushButton *B13 = new QPushButton("PAYS-BAS");
         QPushButton *B14 = new QPushButton("ROUMANIE");
+
+        QPushButton *B15 = new QPushButton("Malte");
+        QPushButton *B16 = new QPushButton("Chypre");
+        QPushButton *B17 = new QPushButton("Danemark");
+        QPushButton *B18 = new QPushButton("Finlande");
+        QPushButton *B19 = new QPushButton("Grece");
+        QPushButton *B20 = new QPushButton("Slovenie");
+        QPushButton *B21 = new QPushButton("Portugal");
+
     protected:
         void resizeEvent(QResizeEvent *event) override; // Déclaration de la méthode resizeEvent
         void setBackgroundImage(); // Déclaration de la méthode setBackgroundImage
@@ -59,6 +68,15 @@ class MainWindow : public QMainWindow
         void Drapeau_LUXEMBOURG();
         void Drapeau_PAYS_BAS();
         void Drapeau_ROUMANIE();
+
+        void Drapeau_MALTE();
+        void Drapeau_CHYPRE();
+        void Drapeau_DANEMARK();
+        void Drapeau_FINLANDE();
+        void Drapeau_GRECE();
+        void Drapeau_SLOVENIE();
+        void Drapeau_PORTUGAL();
+
 };
 
 #endif // MAINWINDOW_H
