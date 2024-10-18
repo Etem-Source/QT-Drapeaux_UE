@@ -12,12 +12,7 @@ MainWindow::MainWindow(QWidget *parent)
     setWindowTitle("Drapeaux tricolores UE");
     resize(700, 400);
 
-    // Charger l'image en arrière-plan
-    QPixmap bkgnd("/home/ciel2024/drapeaux_tricolores_ue_etem/europe.jpeg");
-    bkgnd = bkgnd.scaled(this->size(), Qt::IgnoreAspectRatio);
-    QPalette palette;
-    palette.setBrush(QPalette::Window, QBrush(bkgnd));
-    this->setPalette(palette);
+    setBackgroundImage();
 
     // Création des deux layouts horizontaux
     QHBoxLayout *Hlayout1 = new QHBoxLayout();
@@ -139,6 +134,21 @@ void MainWindow::Drapeau_PAYS_BAS() // B13
 void MainWindow::Drapeau_ROUMANIE() // B14
 {
     Drapeau *D = new Drapeau("DarkBlue", "Gold", "Red", "Vertical", "Roumanie");
+}
+
+void MainWindow::setBackgroundImage()
+{
+    QPixmap bg("/home/ciel2024/drapeaux_tricolores_ue_etem/europe.jpeg");
+    bg = bg.scaled(this->size(), Qt::IgnoreAspectRatio, Qt::SmoothTransformation); // Utiliser SmoothTransformation pour un meilleur rendu
+    QPalette palette;
+    palette.setBrush(QPalette::Window, QBrush(bg));
+    this->setPalette(palette);
+}
+
+void MainWindow::resizeEvent(QResizeEvent *event)
+{
+    QMainWindow::resizeEvent(event); // Appeler la méthode de la classe parente
+    setBackgroundImage(); // Recharger l'image en arrière-plan à chaque redimensionnement
 }
 
 
