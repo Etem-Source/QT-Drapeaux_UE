@@ -24,11 +24,12 @@ Ensuite, vous devez compiler et exécuter le programme :
 
 Petite idée de l'interface : 
 
-![image](https://github.com/user-attachments/assets/e4204237-3c54-446d-bcfa-a52deb8b6989)
+![image](https://github.com/user-attachments/assets/309d4b83-ae44-48ed-b01a-ed1dc6930251)
 
-Testons d'appuyer sur le bouton "Allemagne" : 
 
-![image](https://github.com/user-attachments/assets/1a26ba8d-5973-4cd5-84c2-93379e1eb66d)
+Testons d'appuyer sur le bouton "Grèce" : 
+
+![image](https://github.com/user-attachments/assets/ba77329e-c856-448f-8ed2-b1895419e64c)
 
 
 ## 📧 Crédits
