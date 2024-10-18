@@ -13,6 +13,7 @@ Importer le projet depuis QT :
 ![image](https://github.com/user-attachments/assets/aa50ed87-2a01-4236-ba6a-03bb78d7c70a)
 
 Cliquez sur : [Open]
+
 Importer le fichier .pro
 
 Ensuite, vous devez compiler et exécuter le programme : 
